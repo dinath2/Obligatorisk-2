@@ -28,9 +28,9 @@
 
         QUnit.test("Can I delete a bar?", function (assert) {
             numbers = [7,3,1,5,8];
-            removeBar(8);
-            let expected = [7,3,1,5];
-            assert.deepEqual(numbers, numbers = [7,3,1,5]);
+            removeBar(2);
+            let expected = [7,1,5,8];
+            assert.deepEqual(numbers, numbers = [7,1,5,8]);
         });
 
         QUnit.test("Can I add a bar?", function (assert) {
