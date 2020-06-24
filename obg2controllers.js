@@ -13,11 +13,13 @@
 
         function addBar(inputValue) {
         if (inputValue > 0 && inputValue <= 10) {numbers.push(inputValue);}
-        else {alert("Hey, you gotta pick a number between 1 and 10, buddy!");}
+        else {alert("Hey, you gotta pick a number between 1 and 10 to add a bar!");}
         show();
         }
 
-        function changingBar(){
-        //check what the hecking heck i do here for the love of all things holy halp
+        function changingBar(inputValue, chosenBar){
+        let changedNumber = chosenBar -1;
+        if ((inputValue > 0 && inputValue <= 10)) {numbers[changedNumber] = inputValue;}
+        else {alert("Hey, you gotta pick a number between 1 and 10 to change the value!");}
         show();
         }
