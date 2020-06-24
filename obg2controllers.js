@@ -7,7 +7,7 @@
         }
 
         function removeBar(chosenBar){
-        if(chosenBar) {numbers.splice(chosenBar -1, 1);}
+        if (chosenBar) {numbers.splice(chosenBar -1, 1);}
         show();
         }
 
