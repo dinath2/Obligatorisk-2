@@ -14,29 +14,30 @@
     <script src="obg2controllers.js"></script>
     <script>
         let numbers = [7,3,1,5,8];
-        let yourChosenBar;
         let inputValue;
+        let barNo = null;
+        let chosenBar;
         function show() {}
 
         QUnit.test("Can I choose a bar?", function (assert) {
-            chosenBar(barNo);
-            barNo = 3;
-            let expected = (3);
-            assert.deepEqual(barNo, expected);
+            barNo = null;
+            numbers = [7,3,1,5,8];
+            yourChosenBar(3);
+            assert.equal(chosenBar, 3);
         });
 
         QUnit.test("Can I delete a bar?", function (assert) {
             numbers = [7,3,1,5,8];
             removeBar(8);
             let expected = [7,3,1,5];
-            assert.deepEqual(barNo, expected);
+            assert.deepEqual(numbers, numbers = [7,3,1,5]);
         });
 
         QUnit.test("Can I add a bar?", function (assert) {
             numbers = [7,3,1,5,8];
             addBar(2);
             let expected = [7,3,1,5,8,2];
-            assert.deepEqual(barNo, expected);
+            assert.deepEqual(numbers, numbers = [7,3,1,5,8,2]);
         });
     </script>
 </body>
